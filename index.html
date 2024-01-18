@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project Software Engineering - RevoU</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+<script src="js/script.js"></script>
+          
+</head>
+<body>
+<!-- Header -->
+<section>
+   <span class="text-bold">KATIK</span> | Kalkulator Matematik 
+</section>
+<div class="container">
+    
+    <!-- alert js -->
+    <div class="title-section">
+        <h4>Welcome to Kalkulator Luas & Keliling Persegi</h4>
+        <p>Website ini digunakan untuk menghitung luas dan keliling persegi dalam rangka menyelesaikan mini-project RevoU</p>
+    </div>
+    
+    <div class="img">
+        <img src="assets/square-no-bg.png" alt="Persegi">
+        <p class="para-text">Rumus Luas Persegi yaitu :</p>
+        <span class="text-bold">L = S x S</span>
+        <p class="para-text">Dimana</p>
+        <p class="para-text">L = Luas</p>
+        <p class="para-text">S = Sisi</p>
+    </div>
+    <div class="main-section">
+        <h2><label for="squareSide" id="lblsquareSide">Hitung Luas Persegi</label></h2>
+        <div class="inputSection">
+            <form id="squareSide-form" method="post">
+                  <table>
+                     <tr>
+                          <td>Sisi</td>
+                          <td>:</td>
+                          <td><input type="text" id="square-area" name="square-area"></td>
+                     </tr>                 
+                     <td>Hasil</td>
+                     <td>:</td>
+                     <td><input type="text" id="luas" disabled="true"></td>
+                      <tr>     
+                  </table>
+                </form>
+        </div>
+        <div class="buttons">
+            <button id="btn-calculate" onclick="hitungluas()">Hitung</button>
+            <button id="btn-reset" onclick="reset()">Reset</button>
+        </div>
+    </div>
+<footer>
+<span class="text-bold">KATIK</span> | Andhika Saifuddin Yahya  
+</footer>    
+</div>
+</body>
+</html>

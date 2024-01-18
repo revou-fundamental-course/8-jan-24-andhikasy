@@ -1,0 +1,116 @@
+:root {
+    --main-color:#DCF2F1;
+    --secondary-color:#7FC7D9;
+    --dark-color:#365486;
+}
+
+section {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+    background-color: var(--secondary-color);
+    padding: 40px 0px 40px 0px;
+    border-radius: 25px;
+    opacity: 40%;
+}
+
+.text-bold{
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+.container {
+    margin: 0;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: var(--main-color);
+}
+
+.title-section{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+}
+
+.title-section p {
+    font-size: small;
+}
+
+.main-section {
+    margin: 50px;
+    border: white solid;
+    border-radius: 10px;
+    padding: 40px 0px 40px 0px;   
+    
+}
+
+.inputSection {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.inputSection input {
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    
+}
+
+button{
+    border: none;
+    background-color: var(--dark-color);
+    color:white;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 4px 15px;
+    
+}
+
+button:hover {
+    outline: none;
+    animation-name: background-color;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes background-color {
+    100%{
+      background-color: darkorange;
+    }
+    50% {
+      background-color: darkslategray;
+    }
+    30% {
+      background-color:coral;
+    }
+}
+
+button:active {
+    background-color: var(--main-color);
+    transform: translateY(2px);
+    color: black;    
+}
+
+.img-square {
+    margin-left: 45%;
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    display: block;
+    background-color: white;
+}
+
+.para-text {
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 2px;
+}
+
+footer {
+    margin-bottom: 20px;
+    padding: 10px 10px 40px 10px;
+}
