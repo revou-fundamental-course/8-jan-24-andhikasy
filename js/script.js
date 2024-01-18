@@ -3,14 +3,18 @@ function hitungluas(){
     square=document.getElementById("square-area").value;
     luas=square*square;
     document.getElementById("luas").value=luas;
-    // document.write("L = S x S");
-    // document.write("L = ") + square + ("x") + square;
-    // document.write(luas);
     }
-function explained(){
-    square=document.getElementById("square-area").value;
     
+function hitungkeliling() {
+    square=document.getElementById("square-area").value;
+    keliling=4*square;
+    document.getElementById("keliling").value=keliling;
 }    
+
+function calculate(keliling, luas) {
+    hitungluas();
+    hitungkeliling();
+}
 function reset(){    
     document.getElementById("squareSide-form").reset();
 }

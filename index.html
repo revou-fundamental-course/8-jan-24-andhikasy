@@ -31,7 +31,7 @@
         <p class="para-text">S = Sisi</p>
     </div>
     <div class="main-section">
-        <h2><label for="squareSide" id="lblsquareSide">Hitung Luas Persegi</label></h2>
+        <h2><label for="squareSide" id="lblsquareSide">Hitung Luas  dan Keliling Persegi</label></h2>
         <div class="inputSection">
             <form id="squareSide-form" method="post">
                   <table>
@@ -40,15 +40,19 @@
                           <td>:</td>
                           <td><input type="text" id="square-area" name="square-area"></td>
                      </tr>                 
-                     <td>Hasil</td>
+                     <td>Hasil Luas Persegi</td>
                      <td>:</td>
                      <td><input type="text" id="luas" disabled="true"></td>
                       <tr>     
+                        <td>Hasil Keliling Persegi</td>
+                        <td>:</td>
+                        <td><input type="text" id="keliling" disabled="true"></td>
+                    </tr>
                   </table>
                 </form>
         </div>
         <div class="buttons">
-            <button id="btn-calculate" onclick="hitungluas()">Hitung</button>
+            <button id="btn-calculate" onclick="calculate()">Hitung</button>
             <button id="btn-reset" onclick="reset()">Reset</button>
         </div>
     </div>
